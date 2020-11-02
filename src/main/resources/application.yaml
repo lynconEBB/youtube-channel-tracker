@@ -1,0 +1,17 @@
+logging:
+  level:
+    root: OFF
+  org:
+    springframework:
+      boot: OFF
+spring:
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    show-sql: true
